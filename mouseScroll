@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+while(true)do
+
+	yPosition=$(xdotool getmouselocation | sed 's/.*y://; s/\s\+screen.*//')
+
+	#echo $yPosition
+
+	if [ "$yPosition" -gt 760 ]
+       	then
+
+		xdotool key Down Down Down
+
+	elif [ "$yPosition" -lt 30 ]
+	then
+		xdotool key Up Up Up
+	
+	fi
+
+	sleep .3
+
+
+done
+
+
