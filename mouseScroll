@@ -10,11 +10,11 @@ while(true)do
 	if [ "$yPosition" -gt 760 ]
        	then
 
-		xdotool key Down Down Down
+		xdotool key Down
 
 	elif [ "$yPosition" -lt 30 ]
 	then
-		xdotool key Up Up Up
+		xdotool key Up
 	
 	fi
 
